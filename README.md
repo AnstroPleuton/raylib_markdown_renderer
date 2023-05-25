@@ -15,9 +15,8 @@ It can render
 - Strike through
 - Monospace inline code text
 - Monospace code block
-- Filled bullet points (this)
+- Filled bullet points
 - Hollow bullet points
-  - This
 - Ability to use escape codes to skip formatting
 
 ## Customization
