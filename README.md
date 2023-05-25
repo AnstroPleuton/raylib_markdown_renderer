@@ -33,3 +33,7 @@ You can customize the render by
 ## Usage
 All the fonts that may be used by renderer are stored in one structure called `FontCollection`, make one and pass it as pointer :)
 Same goes for all the colors as `ColorCollection` (~~CC~~), make one and pass it as pointer too!
+
+## License
+This project is licensed under MIT Licese, see [LICENSE](LICENSE).
+The fonts (Roboto, RobotoMono) is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](LICENSE).
