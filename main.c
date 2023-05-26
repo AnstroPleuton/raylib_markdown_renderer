@@ -1,5 +1,4 @@
 #include "raylib.h"
-#include "raygui.h"
 
 // Check if two text string are equal till the length
 bool IsTextEqualTillLength(const char *text1, const char *text2, int length)
@@ -69,7 +68,7 @@ void DrawTextMarkdown(FontCollection *fontCollection, const char *text, Rectangl
     int headerSize = 0;
 
     bool backslashSkip = false;
-    bool wasNewLine = true;
+    bool wasNewLine = false;
     bool isCodeBlock = false; // Using ``` will make it code "block"
 
     // Font style states
@@ -102,10 +101,11 @@ void DrawTextMarkdown(FontCollection *fontCollection, const char *text, Rectangl
 
         // Check for new line
         wasNewLine = false;
-        if (i > 0) if (text[i - 1] == '\n')
-            {
-                wasNewLine = true;
-            }
+        if (i > 0)
+        {
+            if (text[i - 1] == '\n') wasNewLine = true;
+        }
+        else wasNewLine = true;
 
         // Note: No syntax highlighting for code block
         if (MarkdownTextCheck(text, "```", &i))
