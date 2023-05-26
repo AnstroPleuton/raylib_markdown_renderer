@@ -31,6 +31,11 @@ You can customize the render by
 
 ---
 ## Usage
+Call the function DrawTextMarkdown. That's it!
+```c
+// Draw text with markdown formats (only basics)
+void DrawTextMarkdown(FontCollection *fontCollection, const char *text, Rectangle area, float fontSizes[MARKDOWN_HEADER_SIZE_MAX], Vector2 spacing, float tabWidth, ColorCollection *colorCollection)
+```
 All the fonts that may be used by renderer are stored in one structure called `FontCollection`, make one and pass it as pointer :)
 Same goes for all the colors as `ColorCollection` (~~CC~~), make one and pass it as pointer too!
 
