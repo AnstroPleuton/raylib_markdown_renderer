@@ -36,14 +36,14 @@ Call the function DrawTextMarkdown. That's it!
 // Draw text with markdown formats (only basics)
 void DrawTextMarkdown(FontCollection *fontCollection, const char *text, Rectangle area, float fontSizes[MARKDOWN_HEADER_SIZE_MAX], Vector2 spacing, float tabWidth, ColorCollection *colorCollection);
 ```
-All the fonts that may be used by renderer are stored in one structure called `FontCollection`, make one and pass it as pointer :)
-`const char *text` is your markdown text
-`Rectangle area` is used to determine things like Maximum horizontal rule size.
-`float fontSizes[MARKDOWN_HEADER_SIZE_MAX]` should contain font size as first element and rest for header size **(which is multiplied by font size)**
-`Vector2 spacing` is used for spacing of characters. The `y` element is used for spacing of lines.
-`float tabWidth` is used for the width of the `\t` (or tab) character.
-All the colors that may be used by renderer are stored in one structure called `ColorCollection` (~~CC~~), make one and pass it as pointer too!
+All the fonts that may be used by renderer are stored in one structure called `FontCollection`, make one and pass it as pointer :) <br>
+`const char *text` is your markdown text. <br>
+`Rectangle area` is used to determine things like Maximum horizontal rule size. <br>
+`float fontSizes[MARKDOWN_HEADER_SIZE_MAX]` should contain font size as first element and rest for header size **(which is multiplied by font size)**. <br>
+`Vector2 spacing` is used for spacing of characters. The `y` element is used for spacing of lines. <br>
+`float tabWidth` is used for the width of the `\t` (or tab) character. <br>
+All the colors that may be used by renderer are stored in one structure called `ColorCollection` (~~CC~~), make one and pass it as pointer too! <br>
 
 ## License
-This project is licensed under MIT Licese, see [LICENSE](LICENSE).
-The fonts (Roboto, RobotoMono) is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](LICENSE).
+This project is licensed under MIT Licese, see [LICENSE](LICENSE). <br>
+The fonts (Roboto, RobotoMono) is licensed under [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0), see [LICENSE](LICENSE). <br>
